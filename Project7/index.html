@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё хобби - Genshin Impact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Мир Genshin Impact</h1>
+        <button class="burger" id="burger-btn" aria-label="Открыть меню">
+            ☰
+        </button>
+        <button id="theme-toggle" aria-label="Переключить тему">🌙</button>
+        <nav>
+            <a href="#about">О хобби</a>
+            <a href="#characters">Персонажи</a>
+            <a href="#regions">Регионы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О моём хобби</h2>
+            <p>Genshin Impact — Одна из любимых игр жанра гача</p>
+            
+            <div class="extra-info" id="extra-info">
+                <p>Я начал играть в Genshin Impact в 2024 году. С тех пор я прошёл все сюжетные квесты и продолжаю играть в игру активно</p>
+            </div>
+            <button id="toggle-btn">Показать больше</button>
+        </section>
+
+        <section id="characters">
+            <h2>Мои любимые персонажи</h2>
+            <div class="filters">
+                <button data-filter="all" class="active">Все</button>
+                <button data-filter="mondstadt">Мондштадт</button>
+                <button data-filter="natlan">Натлан</button>
+                <button data-filter="liyue">Ли Юэ</button>
+            </div>
+            <input type="text" id="search-input" placeholder="Поиск персонажа...">
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section id="regions">
+            <h2>Регионы Тейвата</h2>
+            <div class="filters">
+                <button data-filter="all" class="active">Все</button>
+                <button data-filter="mondstadt">Мондштадт</button>
+                <button data-filter="natlan">Натлан</button>
+                <button data-filter="liyue">Ли Юэ</button>
+            </div>
+            <input type="text" id="search-input" placeholder="Поиск региона...">
+            <div class="projects-grid" id="projects-grid-2"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form id="contact-form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <span class="error" id="email-error"></span>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ваше имя. Обновлено: <span id="update-date"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
