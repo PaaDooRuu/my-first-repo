@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё хобби - Genshin Impact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Мир Genshin Impact</h1>
+        <nav>
+            <a href="#about">О хобби</a>
+            <a href="#characters">Персонажи</a>
+            <a href="#regions">Регионы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О моём хобби</h2>
+            <p>Genshin Impact — Одна из моих любимых игр жанра гача</p>
+        </section>
+
+        <section id="characters">
+            <h2>Мои любимые персонажи</h2>
+            <article>
+                <h3>Варка</h3>
+                <p>Варка — рыцарь Анемо из Мондштадта. Очень харизматичный персонаж с интересной историей.</p>
+            </article>
+            <article>
+                <h3>Мавуика</h3>
+                <p>Мавуика — Архонт Пиро из Натлана. Очень мудрый и сильный персонаж.</p>
+            </article>
+        </section>
+
+        <section id="regions">
+            <h2>Регионы Тейвата</h2>
+            <article>
+                <h3>Мондштадт</h3>
+                <p>Город свободы и ветра. Первый регион, который я исследовал в игре.</p>
+            </article>
+            <article>
+                <h3>Ли Юэ</h3>
+                <p>Регион контрактов и камней. Очень красивый и вдохновляющий.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ваше имя. Обновлено: <span id="update-date"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
